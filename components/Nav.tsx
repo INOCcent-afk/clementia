@@ -8,9 +8,15 @@ const Nav = () => {
       <div className="logo">
         <h1>Ninja List</h1>
       </div>
-      <Link href="/">home</Link>
-      <Link href="/about">about</Link>
-      <Link href="/ninjas">Ninja Listing</Link>
+      <Link href="/">
+        <a>home</a>
+      </Link>
+      <Link href="/about">
+        <a>about</a>
+      </Link>
+      <Link href="/ninjas">
+        <a>ninjas</a>
+      </Link>
     </nav>
   );
 };
