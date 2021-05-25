@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 
 import Meta from "../../components/Meta";
+import Link from "next/link";
 
 import styles from "../../styles/Ninjas.module.css";
 
@@ -21,11 +22,11 @@ const index: FC<Props> = ({ ninjas }: Props) => {
       <Meta title="Vercel | Ninjas" />
       <h1>All Ninjas</h1>
       {ninjas.map((ninja) => (
-        <div key={ninja.id}>
+        <Link href={`ninjas/${ninja.id}`} key={ninja.id}>
           <a className={styles.single}>
             <h3>{ninja.name}</h3>
           </a>
-        </div>
+        </Link>
       ))}
     </>
   );
