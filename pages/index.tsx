@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Meta from "../components/Meta";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div>
+      <Meta />
       <h1 className={styles.title}>HOMEPAGE</h1>
       <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo
