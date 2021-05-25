@@ -40,5 +40,6 @@ footer {
 }
 .not-found a {
   color: #4979ff;
+  margin-left: 5px;
   text-decoration: underline;
 }
